@@ -36,13 +36,14 @@
                                     <input type="tel" name="tel" id="itelefone" placeholder="(xx)xxxxxxxxx" required maxlength="14" autocomplete="tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{8}">
                                 </div>
                                 <div class="text-field">
-                                    <label for="nada">Sexo</label>
-                                    <label for="iM">Masculino</label>
-                                    <label for="iF">Feminino</label>
-                                    <label for="iOutro">Outro</label>
-                                    <input type="radio" name="sexo" id="iM" required>
-                                    <input type="radio" name="sexo" id="iF">
-                                    <input type="radio" name="sexo" id="iOutro">
+                                    <label for="isexo">Sexo</label>
+                                    <input type="text" name="sexo" id="sexoid" list="isexo">
+                                    <datalist id="isexo">
+                                        <option value="Feminino"></option>
+                                        <option value="Masculino"></option>
+                                        <option value="Não dizer"></option>
+                                        <option value="Outro"></option>
+                                    </datalist>
                                 </div>
                                 <div class="text-field">
                                     <label for="idata">Data de Nascimento</label>
